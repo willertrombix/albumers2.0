@@ -88,7 +88,7 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 [[menu.main]]
   name = "Gente"
   weight = 2
-  identifier = "articulos"
+  identifier = "posts"
   url = "/posts/"
 [[menu.main]]
   name = "Buscar"

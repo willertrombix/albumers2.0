@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on ALBUMERS - Gente que habla de los álbumes que les cambiaron la vida</title>
+    <link>https://example.org/tags/</link>
+    <description>Recent content in Tags on ALBUMERS - Gente que habla de los álbumes que les cambiaron la vida</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-ES</language>
+    <lastBuildDate>Sat, 18 Aug 2018 08:25:33 +0200</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Necrotanke</title>
+      <link>https://example.org/tags/necrotanke/</link>
+      <pubDate>Sat, 18 Aug 2018 08:25:33 +0200</pubDate>
+      
+      <guid>https://example.org/tags/necrotanke/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pantera</title>
+      <link>https://example.org/tags/pantera/</link>
+      <pubDate>Sat, 18 Aug 2018 08:25:33 +0200</pubDate>
+      
+      <guid>https://example.org/tags/pantera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Great Southern Trendkill</title>
+      <link>https://example.org/tags/the-great-southern-trendkill/</link>
+      <pubDate>Sat, 18 Aug 2018 08:25:33 +0200</pubDate>
+      
+      <guid>https://example.org/tags/the-great-southern-trendkill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trocotombix</title>
+      <link>https://example.org/tags/trocotombix/</link>
+      <pubDate>Sat, 18 Aug 2018 08:25:33 +0200</pubDate>
+      
+      <guid>https://example.org/tags/trocotombix/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
