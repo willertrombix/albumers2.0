@@ -1,6 +1,6 @@
-baseurl = "https://donate.habd.as" # Controls base URL sitewide
-languageCode = "en-US" # Controls site language
-title = "After Dark" # Homepage title and page title suffix
+baseurl = "https://example.org/" # Controls base URL sitewide
+languageCode = "es-ES" # Controls site language
+title = "ALBUMERS - Gente que habla de los álbumes que les cambiaron la vida" # Homepage title and page title suffix
 paginate = 11 # Number of posts to show before paginating
 
 # Controls default theme and theme components
@@ -11,6 +11,10 @@ theme = [
 
 enableRobotsTXT = true # Suggested, enable robots.txt file
 disqusShortname = "" # Deprecated, add Disqus shortname for comments
+enableRSS = true
+canonifyURLs = true
+crossorigin = "anonymous" # Optional, sets CORS attribute
+enableEmoji = true
 
 pygmentsCodefences = true # Suggested, highlight fenced code blocks
 pygmentsUseClasses = true # Required for custom syntax highlighting
@@ -19,14 +23,74 @@ sectionPagesMenu = "main" # Enable menu system for lazy bloggers
 footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 
 [params]
-  description = "" # Suggested, controls default description meta
-  author = "" # Optional, controls author name display on posts
+  description = "La comunidad de músicos habla del disco que les marcó para siempre" # Suggested, controls default description meta
+  keywords = [
+      "discos",
+      "LP",
+      "música",
+      "entrevistas música",
+      "disco que cambia la vida"
+  ]
+  author = "Willer" # Optional, controls author name display on posts
   hide_author = true # Optional, set true to hide author name on posts
-  show_menu = false # Optional, set true to enable section menu
-  powered_by = true # Optional, set false to disable footer credits
+  show_menu = true # Optional, set true to enable section menu
+  powered_by = false # Optional, set false to disable footer credits
   images = [
     "https://source.unsplash.com/collection/983219/2000x1322"
   ] # Suggested, controls default Open Graph images
+  noindex_kinds = [
+    "taxonomy",
+    "taxonomyTerm"
+  ]
+
+[frontmatter]
+  date = ["date", "publishDate", "lastmod"]
+  lastmod = [":git", "lastmod", "date", "publishDate"]
+  publishDate = ["publishDate", "date"]
+  expiryDate = ["expiryDate"]
+
+[sitemap]
+  filename = "sitemap.xml"
+
+[taxonomies]
+  tag = "tags"
+  preserveTaxonomyNames = true
+
+[related]
+  threshold = 80
+  includeNewer = false
+  toLower = false
+
+  [[related.indices]]
+    name = "keywords"
+    weight = 150
+  [[related.indices]]
+    name  = "author"
+    toLower = true
+    weight = 30
+  [[related.indices]]
+    name  = "tags"
+    weight = 100
+  [[related.indices]]
+    name  = "date"
+    weight = 10
+    pattern = "2006"
+
+[[menu.main]]
+  name = "Inicio"
+  weight = 1
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "Gente"
+  weight = 2
+  identifier = "articulos"
+  url = "/posts/"
+[[menu.main]]
+  name = "Buscar"
+  weight = 3
+  identifier = "search"
+  url = "/search/"        
 
 [params.modules.fractal_forest]
   enabled = true # Optional, set false to disable module
