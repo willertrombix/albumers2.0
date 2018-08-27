@@ -56,6 +56,10 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
   tag = "tags"
   preserveTaxonomyNames = true
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS", "JSON"]  
+
 [related]
   threshold = 80
   includeNewer = false
