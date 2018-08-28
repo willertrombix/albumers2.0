@@ -15,6 +15,7 @@ enableRSS = true
 canonifyURLs = true
 crossorigin = "anonymous" # Optional, sets CORS attribute
 enableEmoji = true
+mainSections = true
 
 pygmentsCodefences = true # Suggested, highlight fenced code blocks
 pygmentsUseClasses = true # Required for custom syntax highlighting
